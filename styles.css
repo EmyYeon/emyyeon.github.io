@@ -169,8 +169,12 @@ body{
     margin: 5px;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;  
+    white-space: normal; /* Prevents overflow */
+    text-align: center;
+    min-width: 80px; 
+    
 }
-
 
 /* education */
 .content-text {
