@@ -1,0 +1,254 @@
+/* Text */
+h1{
+    font-family: 'Libre Baskerville', serif;
+    text-align: left;
+    font-weight: 500;
+    color: #6067eb;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 600;
+    color: #6067eb;
+    margin-top: 10px;
+}
+h4 {
+    font-family: 'Open Sans';
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #c8c8cb;
+    font-style: italic;
+}
+p {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    font-weight: 400;
+    color: #ffffff;
+}
+.content {
+    margin: 10% 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* navbar */
+.container-fluid{
+    padding: 10px 20px;
+}
+.navbar {
+    padding: 5px;
+}
+
+.nav-item .nav-link {
+    color: white;
+    font-weight: normal;
+}
+
+/* Active page style */
+.nav-item .nav-link.active {
+    color: #6067eb; 
+    border-bottom: #6067eb 1px solid;
+}
+.nav-item .nav-link:hover {   
+    color: #ffcc00; 
+    border-bottom: #ffcc00 1px solid;  
+}
+
+body{
+    background-color: #333142;
+}
+
+/* about */
+.home {
+    display: flex;
+    align-items: center;
+    color:#ffffff;
+    padding: 60px 9% 0;
+    flex-direction: column; 
+}
+@media (min-width: 992px) {  /* When the screen is larger than 768px (laptop or desktop) */
+    .home {
+        flex-direction: row; /* Arrange the image and text side by side */
+    }
+    
+}
+@media (max-width: 991px) {
+    .img-box .img-item img {
+        display: none !important;
+    } 
+}
+
+.home-info {
+    flex: 1;  
+}
+.home-info .cv-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.btn {
+    display: inline-block;
+    background-color: #6753f8;
+    box-shadow: 0 0 10px #6067eb;
+    border: 1px solid #6067eb;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: 0.5s;
+    color:#333142;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.btn:hover {
+    background: transparent;
+    color: #6067eb;
+    box-shadow: none;
+    border: 1px solid #6067eb;
+}
+.cv-info .contact-icons a{
+    display: inline-flex;
+    color:#6067eb;
+    border: 2px solid #6067eb;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    align-items: center;
+    margin: 0 8px;
+    transition: 0.5s;
+}
+.contact-icons a:hover{
+    background: #6067eb;
+    box-shadow: 0 0 10px #6067eb;
+    color:#333142;
+}
+
+.img-box .img-item {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 230px;  
+    height: 180px; 
+    overflow: hidden; /* Hide any overflow from the image */
+    border-radius: 25px; 
+    margin-left:30px;
+}
+
+ .img-box .img-item img {
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover;  /* Ensures the image covers the area of the container */
+    transform: scale(1.2); /* Scale the image to hide the border */
+    display: block;
+}
+
+/* skills */
+.skill-text {
+    display: flex;
+    font-size: small;
+    border: 1px solid snow;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* education */
+.content-text {
+    text-align: start;
+    padding: 0 20px;
+}
+
+/* projects */
+.card-item {
+    border: 2px solid #6067eb;
+    border-radius: 30px;
+    overflow: hidden;
+    max-width: 360px;
+    min-height: 550px;
+}
+.card-item img {
+    max-height: 170px;
+}
+.card-item:hover {
+    box-shadow: 0 0 10px #6067eb;
+}
+.card-body {
+    padding: 20px;
+}
+.tech-list  {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: -30px;
+    
+}
+.tech-list li , .skill-text {
+    list-style: none;
+    white-space: nowarp;
+    border: 2px solid #6067eb;; 
+    color: #6067eb;
+    padding: 5px 10px 5px;
+    border-radius: 20px;
+    text-align: left;
+    max-width: 100%; 
+    font-size: 14px;   
+}
+.card-link {
+  display: flex;
+  justify-content: space-between;
+}
+.card-link a {
+    color:#6067eb;
+}
+
+.row-test{
+    align-items: center;
+   
+}
+.col-test div{
+    display: flex;
+    background-color: #333142;
+    border: 1px solid #6067eb;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;  
+}
+
+/*Service*/
+.blank-page{
+    align-items: center;
+    margin-top: 10%;
+    text-align: center;
+}
+.blank-page img {
+    width: 30%;
+}
+
+/* Contact */
+.contact-icons{
+    max-width:500px ;
+    margin: auto;
+}
+
+.contact-icons ul li {
+    color:#ffffff;
+    list-style: none;
+    margin: 15px;
+    text-align: left; 
+    width: 380px;
+    
+}
+.contact-icons ul li a {
+    margin: 5px;
+    color:#6067eb;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
